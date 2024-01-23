@@ -8,4 +8,4 @@ class CapuletEngine(Engine):
 
     def needs_service(self) -> bool:
         """Check if CapuletEngine needs service."""
-        return self.current_mileage - self.last_service_mileage >= 30000
+        return self.current_mileage - self.last_service_mileage > 30000
