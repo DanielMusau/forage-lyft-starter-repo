@@ -9,4 +9,4 @@ class SpindlerBattery(Battery):
 
     def needs_service(self) -> bool:
         """Check if SpindlerBattery needs service."""
-        return self.current_date - self.last_service_date > timedelta(days=730)
+        return self.current_date - self.last_service_date > timedelta(days=1095)
